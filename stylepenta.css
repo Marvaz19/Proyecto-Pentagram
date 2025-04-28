@@ -340,8 +340,8 @@ width: 60%;}
         background-size:cover;
    
    font-size: medium; }
-   .cajaheader{width: 100%;}
    
+  
     main {
         background-size: auto;
         font-size: smaller;
@@ -365,7 +365,7 @@ height: auto;}
     "parrafact"
     "fotomeme";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 450px 50px 1200px 550px 50px 1800px 50px 700px 100px 2000px 500px;
+    grid-template-rows: 50px 650px 50px 1700px 480px 50px 2700px 50px 1000px 100px 2950px 450px;
     
   
 }
@@ -399,7 +399,7 @@ height: auto;}
     "imagendoc"
     "trailer";
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 530px 620px 400px ;
+    grid-template-rows: 50px 750px 620px 400px ;
     background-size: auto;
     
 }
@@ -412,7 +412,56 @@ justify-content: center;
 .trailer {width: 100%;
 height: 100%;
 }
+.backhome {
+    display: grid;
+    grid-template-areas: 
+    "titulo"
+    "sitio"
+    "foto"
+    "doom"
+    "spot";
+    grid-template-columns: 1fr ;
+    grid-template-rows: 10px 100px 300px 300px 50px;
+     }
+     .backaudio {
+        
+        display: grid;
+        grid-template-areas:
+        "tituloa1" 
+        "spoti"
+        "tituloa2"
+        "video1"
+        "video2"
+        "video3"
+        "video4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 350px 50px 400px 400px 400px 400px;
 
+    }
+    .spoti {
+        width: 100%;
+        height: 100%;
+        ;
+    }
+    .video1 {
+        width: 100%;
+        height: 100%;
+
+    }
+    .video2 {
+        width: 100%;
+        height: 100%;
+
+    }.video3 {
+        width: 100%;
+        height: 100%;
+
+    }.video4 {
+        width: 100%;
+        height: 100%;
+
+    }
+    
 }
 
 
