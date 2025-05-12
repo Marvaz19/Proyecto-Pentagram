@@ -1,0 +1,388 @@
+
+*{margin: 0;
+padding: 0}
+
+/* fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Amarante&family=Orbitron:wght@400..900&display=swap');
+
+/* body*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: medium;
+    background-size: auto;
+    background-color: hsl(240, 5%, 11%);
+    
+    ul{list-style: none;}
+    .foto {width: 90%;height: auto;}
+    .parrafo2 { font-size: medium}
+    .parrafo {font-size: large;}
+    h1{color: #a64d79;}
+    h1 { text-align: center }
+    h2 {color : #a64d79}
+    h2 {text-align: center;}
+    .parrafo { color: white;    }
+    .parrafo2 {color: #f39f5a}
+
+    
+    /*discografia*/
+    .backdisc {
+    background-image: url(https://cdn-p.smehost.net/sites/7f9737f2506941499994d771a29ad47a/wp-content/uploads/2022/07/2022-06-26-Hellfest-Pentagram-6-watermark-1536x1024.jpg);
+    background-size: cover; filter: brightness(1);
+    background-blend-mode:overlay;
+    font-weight: 600;
+    display: grid;
+    grid-template-areas: 
+    ". titulodisc titulodisc titulodisc ."
+    ". disco1 disco2 disco3 ."
+    ". disco4 disco5 disco6 ."
+    ". disco7 disco8 disco9 .";
+    grid-template-columns: 05% 30% 30% 30% 05%;
+    grid-template-rows: 50px 500px 500px 500px;
+    .backdisc-grid { 
+        height: 100%;
+        width: 100%;
+       }
+    .titulodisc { grid-area: titulodisc;
+    text-align: center;}
+    .logospot {
+        width: 15%;
+        height:auto;
+    }
+    .card {
+        background: none;
+        font-size: normal;
+    }
+    .disco1 { grid-area: disco1;
+    font-size: larger;
+    color:#f39f5a;
+    list-style: none;
+    }
+    .disco2 { grid-area: disco2;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;
+    }
+    .disco3 {grid-area: disco3;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco4 {grid-area: disco4;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco5 {grid-area: disco5;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco6 {grid-area: disco6;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco7 {grid-area: disco7;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco8 {grid-area: disco8;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    .disco9 {grid-area: disco9;
+        font-size: larger;
+        color:#f39f5a;
+        list-style: none;}
+    }
+
+/*Index*/
+.backhome {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg/1280px-Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg);
+    background-size: cover; filter: brightness(2);
+    background-blend-mode:overlay;
+display: grid;
+grid-template-areas: 
+"titulo titulo titulo titulo titulo"
+"sitio sitio sitio sitio sitio"
+". foto foto foto foto"
+"doom doom doom doom doom"
+"spot spot spot spot spot";
+grid-template-columns: 15% 20% 20% 20% 15% ;
+grid-template-rows: 10px 100px 800px 300px 300px;
+ }
+  .h1 {grid-area: titulo;}
+  .parrafo {grid-area: sitio;
+    text-align: center;} 
+  .foto {grid-area: foto;
+    justify-items: center;}
+  .backhome img { border-radius: 25px;} 
+  .doom {grid-area: doom;
+    text-align: center;}
+.spot {grid-area: spot;}
+
+ /* Documental */
+ .backdocumental {
+    background-image: url(https://m.media-amazon.com/images/S/pv-target-images/241ed777d1810dea158a3cfcea92fd5f87c7bded4403628aeff1913c3fd8be4d.jpg);
+    background-size: 90%; filter: brightness(1.5);
+    background-blend-mode:overlay;
+    display: grid;
+    grid-template-columns: 30% 10% 30%;
+    grid-template-rows: 50px 600px 400px;
+    grid-template-areas: 
+        "titulodoc titulodoc titulodoc"
+        "parrafodoc parrafodoc imagendoc"
+        "trailer trailer trailer";}
+.backdocumental-grid {
+    width: 100%;
+    height: 100%;}
+.titulodoc {
+    grid-area: titulodoc;
+    justify-items: center;
+    text-align: center;   }
+.parrafodoc {
+    grid-area: parrafodoc;
+    text-align: center;
+    font-size: large;
+    color: white    }
+.imagendoc {
+    border-radius: 25px;
+    grid-area: imagendoc;
+    width: 100%;
+    height: auto;
+    justify-items: right;    }
+.trailer {
+    grid-area: trailer;
+    justify-items: center;}
+/* audios y videos */
+.backaudio {
+    background-image: url(https://www.futuro.cl/wp-content/uploads/2022/08/pentagram.jpg);
+    background-size: cover; filter: brightness(1);
+    background-blend-mode:overlay;
+    background-repeat:repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-areas:
+    "tituloa1 tituloa1 tituloa1 tituloa1" 
+    "spoti spoti spoti spoti"
+    "tituloa2 tituloa2 tituloa2 tituloa2"
+    "video1 video1 video2 video2"
+    "video3 video3 video4 video4";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50px 350px 50px 400px 400px;}
+.tituloa1{
+    grid-area: tituloa1;    }
+.spoti{
+    grid-area: spoti;}
+.tituloa2{
+    grid-area: tituloa2;    }
+.video1{
+    grid-area: video1;    }
+.video2{
+    grid-area: video2;    }
+.video3{
+    grid-area: video3;    }
+.video4{
+    grid-area: video4;    }
+
+    /* Historia */
+
+.historiabox {
+    display: grid;
+    grid-template-areas: 
+    "titulohist1 titulohist1 titulohist1 titulohist1 titulohist1"
+    ". parrafhist1 parrafhist1 histfoto1 ."
+    ". titulorigen titulorigen titulorigen ."
+    ". fotorigen parraforigen parraforigen ."
+    ". titulo70 titulo70 titulo70 ."
+    ". parrafo70 parrafo70 foto70 ."
+    ". tituloref tituloref tituloref ."
+    ". fotoref parrafref parrafref ."
+    ". tituloact tituloact tituloact ."
+    ". parrafact parrafact fotomeme .";
+    grid-template-columns: 15% 20% 20% 20% 15%;
+    grid-template-rows: 50px 480px 50px 900px 50px 1300px 50px 500px 50px 1400px;   
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg/1280px-Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg);
+    background-size: cover; filter: brightness(2);
+    background-blend-mode:overlay;
+    img{ border-radius: 25px;
+        width: 100%;
+        height: auto;}
+    }
+.titulohist1{
+    grid-area: titulohist1;}
+.parrafhist1{grid-area: parrafhist1;}
+.histfoto1{grid-area: histfoto1;}
+.titulorigen{grid-area: titulorigen;}
+.fotorigen{grid-area: fotorigen;
+width: 70%;}
+.parraforigen{grid-area: parraforigen;}
+.titulo70{grid-area: titulo70;}
+.parrafo70{grid-area: parrafo70;}
+.foto70{grid-area: foto70;}
+.tituloref{grid-area: tituloref;}
+.fotoref{grid-area: fotoref;
+width: 60%;}
+.parrafref{grid-area: parrafref;}
+.tituloact{grid-area: tituloact;}
+.parrafact{grid-area: parrafact;}
+.fotomeme{grid-area: fotomeme;}
+
+
+}
+
+/* header */
+header {
+    width: 100%;
+    height: 10%;
+
+    .navbar-brand { background-color: black;
+        padding-top: 0%;}
+    img {width: 10%;
+        height: auto;}
+    .navbar { padding: 0%;
+            margin: 0%;}
+    .nav-item {background-color: #6a1e55;
+            font-weight: 600;
+            border-radius: 10%;
+            margin: 1%;}
+    .nav-link {color: #f39f5a;}
+    .container-fluid { background-color: black;}
+}
+/* footer*/
+footer {
+    display: flex;
+    background-color: #6a1e55;
+    width: 100%;
+    height: 30%;
+
+    .footerbox {
+        display: flexbox;
+        box-sizing:border-box;
+        flex-direction: row; }
+    img {
+        width: 5%;
+        height: 5%;}
+    ul{
+        list-style: none;}
+}
+/* Resonsive */
+/* Mobile */
+
+@media (max-width:480px) { 
+    header {
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+        background-color: #6a1e55;
+        background-size:cover;
+        font-size: medium; }
+    main {
+        background-size: auto;
+        font-size: smaller;}
+    .foto {width: 100%;
+        height: auto;}
+    .imagendoc {width: 100%;
+        height: auto;}
+    .historiabox {
+        grid-template-areas: 
+        "titulohist1"
+        "parrafhist1" 
+        "titulorigen"
+        "parraforigen"
+        "fotorigen"
+        "titulo70"
+        "parrafo70"
+        "tituloref"
+        "parrafref"
+        "tituloact"
+        "parrafact"
+        "fotomeme";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 650px 50px 1700px 480px 50px 2700px 50px 1000px 100px 2950px 450px;      
+    }
+    .histfoto1{display: none;}
+    .foto70{display: none;}
+    .fotoref{display: none;}
+    main{font-size: 1.5rem;}
+    .backdisc{
+        grid-template-areas: 
+        "titulodisc"
+        "disco1"
+        "disco2"
+        "disco3"
+        "disco4"
+        "disco5"
+        "disco6"
+        "disco7"
+        "disco8"
+        "disco9";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 600px 600px 600px 600px 600px 600px 600px 600px;
+         align-items: center;
+       }
+    .imgdisc{width: 100%;
+        height: auto;}
+    .backdocumental{  
+        grid-template-areas: 
+        "titulodoc"
+        "parrafodoc"
+        "imagendoc"
+        "trailer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 750px 620px 400px ;
+        background-size: auto;
+        }
+    .parrafodoc {width: 100%;
+        height: auto;
+        font-size: medium;
+        justify-content: center;
+    }
+    .imagendoc {width: 100%;height: auto;}
+    .trailer {width: 100%;
+        height: 100%;
+    }
+    .backhome {
+        display: grid;
+        grid-template-areas: 
+        "titulo"
+        "sitio"
+        "foto"
+        "doom"
+        "spot";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 10px 100px 300px 300px 50px;
+         }
+    .backaudio {
+        display: grid;
+        grid-template-areas:
+            "tituloa1" 
+            "spoti"
+            "tituloa2"
+            "video1"
+            "video2"
+            "video3"
+            "video4";
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 350px 50px 400px 400px 400px 400px;
+        }
+    .spoti {
+        width: 100%;
+        height: 100%;}
+    .video1 {
+        width: 100%;
+        height: 100%;}
+    .video2 {
+        width: 100%;
+        height: 100%;}
+    .video3 {
+        width: 100%;
+        height: 100%;}
+    .video4 {
+        width: 100%;
+        height: 100%;}
+    }
+
+
+
+
+    
