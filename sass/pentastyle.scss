@@ -261,8 +261,9 @@ height: auto;}
 
 /* Resonsive */
 /* Mobile */
-
-@media (max-width:480px) { 
+ @media (max-width: 768px) 
+ {
+    
     header {
         width: 100%;
         height: auto;
@@ -270,37 +271,38 @@ height: auto;}
         background-color: #6a1e55;
         background-size:cover;
         font-size: medium; }
-    main {
-        background-size: auto;
-        font-size: smaller;}
+   
     .foto {width: 100%;
         height: auto;}
     .imagendoc {width: 100%;
         height: auto;}
-    .historiabox {
+    
+    main.historiabox {
+        display: grid;
+       grid-template-columns: repeat(1, 1fr);
         grid-template-areas: 
         "titulohist1"
-        "parrafhist1" 
-        "titulorigen"
-        "parraforigen"
-        "fotorigen"
-        "titulo70"
-        "parrafo70"
-        "tituloref"
-        "parrafref"
-        "tituloact"
-        "parrafact"
-        "fotomeme";
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 650px 50px 1700px 480px 50px 2700px 50px 1000px 100px 2950px 450px;      
+        " parrafhist1 " 
+        " titulorigen "
+        " parraforigen "
+        " fotorigen "
+        " titulo70 "
+        " parrafo70 "
+        " tituloref "
+        " parrafref "
+        " tituloact "
+        " parrafact "
+        " fotomeme ";
+        ;
+        grid-template-rows: 50px 600px 50px 1700px 480px 50px 2700px 50px 1000px 100px 2950px 450px; 
+
     }
+    
     .histfoto1{display: none;}
     .foto70{display: none;}
     .fotoref{display: none;}
-    
-    
-    main{font-size: 1.5rem;}
-    .backdisc{
+
+    main.backdisc{
         grid-template-areas: 
         "titulodisc"
         "disco1"
@@ -319,7 +321,7 @@ height: auto;}
     .imgdisc{width: 100%;
         height: auto;}
     
-    .backdocumental{  
+    main.backdocumental{  
         grid-template-areas: 
         "titulodoc"
         "parrafodoc"
@@ -339,9 +341,8 @@ height: auto;}
         height: 100%;
     }
     
-    .backhome {
-       background: none;
-
+    main.backhome { 
+        background-size: 100vw 100vh;
         display: grid;
         grid-template-areas: 
         "titulo"
@@ -353,7 +354,7 @@ height: auto;}
         grid-template-rows: 1px;
         ;
          }
-    .backaudio {
+    main.backaudio {
         display: grid;
         grid-template-areas:
             "tituloa1" 
