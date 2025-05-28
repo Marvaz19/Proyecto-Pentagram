@@ -55,10 +55,10 @@ body{
     header {
         width: 100%;
         height: auto;
-        box-sizing: content-box;
         background-color: #6a1e55;
         background-size:cover;
         font-size: medium; 
+       
          }
     .foto {width: 100%;
         height: auto;}
@@ -67,27 +67,32 @@ body{
     
     main.historiabox {
         display: grid;
-       grid-template-columns: repeat(1, 1fr);
+       grid-template-columns: 1fr;
         grid-template-areas: 
         "titulohist1"
-        " parrafhist1 " 
-        " titulorigen "
-        " parraforigen "
-        " fotorigen "
-        " titulo70 "
-        " parrafo70 "
-        " tituloref "
-        " parrafref "
-        " tituloact "
-        " parrafact "
-        " fotomeme ";
-        ;
-        grid-template-rows: 50px 600px 50px 1700px 480px 50px 2700px 50px 1000px 100px 2950px 450px; 
-    }
+        "parrafhist1" 
+        "titulorigen"
+        "parraforigen"
+        "fotorigen"
+        "titulo70"
+        "parrafo70"
+        "tituloref"
+        "parrafref"
+        "tituloact"
+        "parrafact"
+        "fotomeme";
+        
+        grid-template-rows: 5vh 70vh 5vh 180vh 65vh 5vh 270vh 5vh 100vh 5vh 300vh 60vh; 
+
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: auto;
+    
     .histfoto1{display: none;}
     .foto70{display: none;}
     .fotoref{display: none;}
-   
+    }
     main.backdisc{
         grid-template-areas: 
         "titulodisc"
@@ -127,7 +132,7 @@ body{
     .trailer {width: 100%;
         height: 100%;
     }
-    
+    main {width: auto;}
     main.backhome { 
         background-size: 100vw 100vh;
         display: grid;
@@ -170,7 +175,9 @@ body{
         width: 100%;
         height: 100%;}
     }
-
+footer {
+    width: 100%;
+}
 
 
 
