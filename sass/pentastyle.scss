@@ -102,8 +102,9 @@ body{
         "disco9";
         grid-template-columns: 1fr;
         grid-template-rows: 100px 500px 600px 600px 600px 600px 600px 600px 600px 600px;
-         align-items: center;
+      .card { padding-left: 20%;}
        }
+   
     .imgdisc{width: 100%;
         height: auto;}
     

@@ -294,6 +294,7 @@ main.historiabox img {
 
 .parrafo70 {
   grid-area: parrafo70;
+  animation-timing-function: 1;
 }
 
 .foto70 {
@@ -424,7 +425,9 @@ body .parrafo2 {
     grid-template-areas: "titulodisc" "disco1" "disco2" "disco3" "disco4" "disco5" "disco6" "disco7" "disco8" "disco9";
     grid-template-columns: 1fr;
     grid-template-rows: 100px 500px 600px 600px 600px 600px 600px 600px 600px 600px;
-    align-items: center;
+  }
+  main.backdisc .card {
+    padding-left: 20%;
   }
   .imgdisc {
     width: 100%;
