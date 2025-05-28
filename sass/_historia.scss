@@ -29,7 +29,8 @@ main.historiabox {
 width: 70%;}
 .parraforigen{grid-area: parraforigen;}
 .titulo70{grid-area: titulo70;}
-.parrafo70{grid-area: parrafo70;}
+.parrafo70{grid-area: parrafo70;
+animation-timing-function: 1;}
 .foto70{grid-area: foto70;}
 .tituloref{grid-area: tituloref;}
 .fotoref{grid-area: fotoref;
@@ -38,3 +39,5 @@ width: 60%;}
 .tituloact{grid-area: tituloact;}
 .parrafact{grid-area: parrafact;}
 .fotomeme{grid-area: fotomeme;}
+
+flip-left {  }
