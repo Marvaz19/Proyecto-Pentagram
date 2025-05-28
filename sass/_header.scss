@@ -1,0 +1,21 @@
+header {
+         
+    width: 100%;
+    height: 10%;
+    .navbar-brand { background: #6A1E55;
+background: radial-gradient(circle,rgba(106, 30, 85, 1) 0%, rgba(0, 0, 0, 1) 57%);
+        padding-top: 0%;}
+    img {width: 20%;
+        height: auto;}
+    .navbar { padding: 0%;
+            margin: 0%;}
+    .nav-item {background-color: #6a1e55;
+            font-weight: 600;
+            border-radius: 10%;
+            margin: 1%;}
+    .nav-link {color: #f39f5a;}
+    .container-fluid { background-color: black;}
+    .nav-item:hover { transform: scale(1.5,1.5);     
+    }
+   
+}

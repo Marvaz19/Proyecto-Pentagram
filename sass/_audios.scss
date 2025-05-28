@@ -1,0 +1,32 @@
+main.backaudio {
+    background-image: url(https://www.futuro.cl/wp-content/uploads/2022/08/pentagram.jpg);
+    background-size: cover; filter: brightness(1);
+    background-blend-mode:overlay;
+    background-repeat:repeat;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    display: grid;
+    grid-template-areas:
+    "tituloa1 tituloa1 tituloa1 tituloa1" 
+    "spoti spoti spoti spoti"
+    "tituloa2 tituloa2 tituloa2 tituloa2"
+    "video1 video1 video2 video2"
+    "video3 video3 video4 video4";
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: 50px 350px 50px 400px 400px;}
+.tituloa1{
+    grid-area: tituloa1;    }
+.spoti{
+    grid-area: spoti;}
+.tituloa2{
+    grid-area: tituloa2;    }
+.video1{
+    grid-area: video1;    }
+.video2{
+    grid-area: video2;    }
+.video3{
+    grid-area: video3;    }
+.video4{
+    grid-area: video4;    }

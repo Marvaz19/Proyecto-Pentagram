@@ -1,0 +1,34 @@
+main.backdocumental {
+    background-image: url(https://s3.us-east-1.amazonaws.com/bomb-images/_hiresolution/lastdayshere_body.jpg);
+    background-size: 100%; filter: brightness(1);
+    background-blend-mode:overlay;
+    display: grid;
+    grid-template-columns: 30% 10% 30%;
+    grid-template-rows: 50px 600px 400px;
+    grid-template-areas: 
+        "titulodoc titulodoc titulodoc"
+        "parrafodoc parrafodoc imagendoc"
+        "trailer trailer trailer";}
+.backdocumental-grid {
+    width: 100%;
+    height: 100%;}
+.titulodoc {
+    grid-area: titulodoc;
+    justify-items: center;
+    text-align: center; }
+.parrafodoc {
+    grid-area: parrafodoc;
+    text-align: center;
+    font-size: large;
+    color: white;
+    font-weight: 600;
+}
+.imagendoc {
+    border-radius: 25px;
+    grid-area: imagendoc;
+    width: 100%;
+    height: auto;
+    justify-items: right;    }
+.trailer {
+    grid-area: trailer;
+    justify-items: center;}

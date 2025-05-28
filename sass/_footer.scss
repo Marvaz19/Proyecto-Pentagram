@@ -1,0 +1,18 @@
+footer {
+display: flex;
+flex-flow: row wrap;
+flex-direction: row;
+background: #6A1E55;
+background: radial-gradient(circle,rgba(106, 30, 85, 1) 0%, rgba(0, 0, 0, 1) 57%);
+gap: 1rem;
+}
+.iconos1 {
+  display: inline-flex;
+  box-sizing: border-box;
+  flex-basis: 0; /* Establecer un tamaño base inicial de 0 */
+  width: 80%;
+  height: auto
+}
+.iconos2 {
+  @extend .iconos1;
+}

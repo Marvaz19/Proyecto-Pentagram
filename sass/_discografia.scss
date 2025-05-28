@@ -1,0 +1,56 @@
+main.backdisc {
+    background-image: url(https://cdn-p.smehost.net/sites/7f9737f2506941499994d771a29ad47a/wp-content/uploads/2022/07/2022-06-26-Hellfest-Pentagram-6-watermark-1536x1024.jpg);
+    background-size: cover; filter: brightness(1);
+    background-blend-mode:overlay;
+    font-weight: 600;
+    display: grid;
+    grid-template-areas: 
+    ". titulodisc titulodisc titulodisc ."
+    ". disco1 disco2 disco3 ."
+    ". disco4 disco5 disco6 ."
+    ". disco7 disco8 disco9 .";
+    grid-template-columns: 05% 30% 30% 30% 05%;
+    grid-template-rows: 50px 500px 500px 500px;
+    .backdisc-grid { 
+        height: 100%;
+        width: 100%;
+       }
+    .titulodisc { grid-area: titulodisc;
+    text-align: center; }
+    .logospot {
+        width: 15%;
+        height:auto;
+    }
+    .card {
+        background: rgba($color: white, $alpha: 0.1);
+        font-size: normal;
+        
+    }
+
+    .disco1 { grid-area: disco1;
+    font-size: larger;
+    color:black;
+    list-style: none;
+    font-weight: 900;
+    text-shadow: 8px 8px 2px rgba(106,30,85,0.49);
+
+    }
+    .disco2 { grid-area: disco2;
+        @extend .disco1
+        
+    }
+    .disco3 {grid-area: disco3;
+       @extend .disco1;}
+    .disco4 {grid-area: disco4;
+        @extend .disco1;}
+    .disco5 {grid-area: disco5;
+         @extend .disco1;}
+    .disco6 {grid-area: disco6;
+         @extend .disco1;}
+    .disco7 {grid-area: disco7;
+         @extend .disco1;}
+    .disco8 {grid-area: disco8;
+         @extend .disco1;}
+    .disco9 {grid-area: disco9;
+         @extend .disco1;}
+    }

@@ -1,0 +1,28 @@
+main.backhome {background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg/1280px-Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg);
+    background-size: cover; filter: brightness(2);
+    background-blend-mode:overlay;
+display: grid;
+grid-template-areas: 
+"titulo titulo titulo"
+"sitio sitio sitio"
+". foto ."
+"doom doom doom"
+"spot spot spot";
+grid-template-columns: 10% 80% 10% ;
+grid-template-rows: 10px 100px 1000px 100px 300px;
+justify-content: cover;
+height: fit-content;
+ }
+.h1 {grid-area: titulo;}
+.parrafo {grid-area: sitio;
+    text-align: center;} 
+.foto {grid-area: foto;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    justify-content: cover;
+}
+.backhome img { border-radius: 25px;} 
+.doom {grid-area: doom;
+    text-align: center;}
+.spot {grid-area: spot;}

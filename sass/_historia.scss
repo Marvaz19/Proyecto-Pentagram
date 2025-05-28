@@ -1,0 +1,40 @@
+main.historiabox {
+    display: grid;
+    grid-template-areas: 
+    "titulohist1 titulohist1 titulohist1 titulohist1 titulohist1"
+    ". parrafhist1 parrafhist1 histfoto1 ."
+    ". titulorigen titulorigen titulorigen ."
+    ". fotorigen parraforigen parraforigen ."
+    ". titulo70 titulo70 titulo70 ."
+    ". parrafo70 parrafo70 foto70 ."
+    ". tituloref tituloref tituloref ."
+    ". fotoref parrafref parrafref ."
+    ". tituloact tituloact tituloact ."
+    ". parrafact parrafact fotomeme .";
+    grid-template-columns: 15% 20% 20% 20% 15%;
+    grid-template-rows: 50px 480px 50px 900px 50px 1300px 50px 500px 50px 1400px;   
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg/1280px-Pentagram_Hammer_of_Doom_X_Wuerzburg_2015_1.jpg);
+    background-size: cover; filter: brightness(1);
+    background-blend-mode:overlay;
+    img{ border-radius: 25px;
+        width: 100%;
+        height: auto;}
+    }
+.titulohist1{
+    grid-area: titulohist1;}
+.parrafhist1{grid-area: parrafhist1;}
+.histfoto1{grid-area: histfoto1;}
+.titulorigen{grid-area: titulorigen;}
+.fotorigen{grid-area: fotorigen;
+width: 70%;}
+.parraforigen{grid-area: parraforigen;}
+.titulo70{grid-area: titulo70;}
+.parrafo70{grid-area: parrafo70;}
+.foto70{grid-area: foto70;}
+.tituloref{grid-area: tituloref;}
+.fotoref{grid-area: fotoref;
+width: 60%;}
+.parrafref{grid-area: parrafref;}
+.tituloact{grid-area: tituloact;}
+.parrafact{grid-area: parrafact;}
+.fotomeme{grid-area: fotomeme;}
