@@ -389,7 +389,7 @@ body .parrafo2 {
 
 /* Resonsive */
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   header {
     width: 100%;
     height: auto;
@@ -409,7 +409,7 @@ body .parrafo2 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "titulohist1" "parrafhist1" "titulorigen" "parraforigen" "fotorigen" "titulo70" "parrafo70" "tituloref" "parrafref" "tituloact" "parrafact" "fotomeme";
-    grid-template-rows: 5vh 70vh 5vh 180vh 65vh 5vh 270vh 5vh 100vh 5vh 300vh 60vh;
+    grid-template-rows: 50px 600px 50px 1700px 400px 50px 2700px 50px 1000px 50px 2900px 350px;
     overflow-wrap: break-word;
     word-wrap: break-word;
     overflow-x: hidden;
@@ -423,6 +423,10 @@ body .parrafo2 {
   }
   main.historiabox .fotoref {
     display: none;
+  }
+  main.historiabox img {
+    height: 250px;
+    width: auto;
   }
   main.backdisc {
     grid-template-areas: "titulodisc" "disco1" "disco2" "disco3" "disco4" "disco5" "disco6" "disco7" "disco8" "disco9";

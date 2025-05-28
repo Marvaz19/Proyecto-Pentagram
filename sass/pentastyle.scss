@@ -50,7 +50,7 @@ body{
 
 /* Resonsive */
 /* Mobile */
- @media (max-width: 768px) 
+ @media (max-width: 991px) 
  {
     header {
         width: 100%;
@@ -82,7 +82,7 @@ body{
         "parrafact"
         "fotomeme";
         
-        grid-template-rows: 5vh 70vh 5vh 180vh 65vh 5vh 270vh 5vh 100vh 5vh 300vh 60vh; 
+        grid-template-rows: 50px 600px 50px 1700px 400px 50px 2700px 50px 1000px 50px 2900px 350px; 
 
         overflow-wrap: break-word;
         word-wrap: break-word;
@@ -92,7 +92,8 @@ body{
     .histfoto1{display: none;}
     .foto70{display: none;}
     .fotoref{display: none;}
-    }
+    img {height: 250px; width: auto;}
+    }      
     main.backdisc{
         grid-template-areas: 
         "titulodisc"
